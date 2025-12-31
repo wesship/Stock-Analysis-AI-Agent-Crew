@@ -1,60 +1,70 @@
-# Stock-Analysis-AI-Agent-Crew
-Multiple LLM Based AI Agent work together to gather information about stocks, to process financial details and market sentiments and to advice to perform trade.
+> [!NOTE]
+> This project is a fork of [parthhhx/Stock-Analysis-AI-Agent-Crew](https://github.com/parthhhx/Stock-Analysis-AI-Agent-Crew). The original project and its contributors can be found there.
 
-## Dopendencies
+# Stock Analysis AI Agent Crew
 
-1. Python version==3.10.0
-2. Anaconda setup
-3. API key from https://serper.dev/login
-4. API key from https://console.groq.com/keys
-5. API key from https://account.browserless.io/
-6. API key from https://sec-api.io/login
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![CI/CD Status](https://github.com/wesship/Stock-Analysis-AI-Agent-Crew/actions/workflows/ci.yml/badge.svg)](https://github.com/wesship/Stock-Analysis-AI-Agent-Crew/actions/workflows/ci.yml)
 
-# How to run?
-### STEPS:
+> Multiple LLM based AI Agents work together to gather information about stocks, process financial details and market sentiments, and provide advice on performing trades.
 
-Clone the repository
+---
 
-```bash
-git clone https://github.com/parthhhx/Stock-Analysis-AI-Agent-Crew
-```
+## ✨ Features
 
-move to other folder
+- **Multi-Agent System**: Utilizes a crew of AI agents for comprehensive stock analysis.
+- **Data Gathering**: Collects stock information, financial details, and market sentiment.
+- **Trade Recommendations**: Provides advice on stock trading based on the analysis.
 
-```bash
-mv ././Stock-Analysis-AI-Agent-Crew stock-analysis-crew
-```
+---
 
+## 🚀 Getting Started
 
-### STEP 01- Create a conda environment after opening the repository
+### Prerequisites
 
-```bash
-conda create -n stock-analysis-crew python=3.10 -y
-```
+- Python 3.10
+- Conda (Anaconda or Miniconda)
+- API keys from Serper, Groq, Browserless, and SEC-API
 
-### STEP 02- install all the dependencis
-```bash
-poetry install --no-root
-```
+### Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/wesship/Stock-Analysis-AI-Agent-Crew.git
+   cd Stock-Analysis-AI-Agent-Crew
+   ```
+2. Create and activate a Conda environment:
+   ```bash
+   conda create -n stock-analysis-crew python=3.10 -y
+   conda activate stock-analysis-crew
+   ```
+3. Install dependencies:
+   ```bash
+   poetry install --no-root
+   ```
+4. Set your API keys in a `.env` file.
 
-
-### STEP 03- SET API Keys in env file 
-
-```bash
-#set api keys in .env file
-#ie: BROWSERLESS_API_KEY=756209
-```
-
-```bash
-# Finally run the following
-python app.py
-```
-
+### Usage
 
 ```bash
-Author: Parth Chaudhari
-Parth Chaudhari
-Email: parthchaudhari223@gmail.com
-
+python main.py
 ```
+
+---
+
+## 🛠️ Built With
+
+- [Python](https://www.python.org/)
+- [CrewAI](https://www.crewai.com/)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please see the [contributing guidelines](CONTRIBUTING.md) for more information.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
